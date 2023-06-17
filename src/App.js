@@ -6,20 +6,29 @@ import About from './components/About';
 import Portfolio from './components/Portfolio';
 import Contact from './components/Contact';
 import Resume from './components/Resume';
+import Navigation from './components/Navigation';
 
 const App = () => {
   return (
     <Router>
-      <Header />
-      <Routes>
-        <Route path="/about" element={<About />} />
-        <Route path="/portfolio" element={<Portfolio />} />
-        <Route path="/contact" element={<Contact />} />
-        <Route path="/resume" element={<Resume />} />
-      </Routes>
-      <Footer />
+      <div className="container">
+        <Header />
+        <Navigation />
+        <main style={{flexGrow: 1}}>
+          <Routes>
+            <Route path="/about" element={<About />} />
+            <Route path="/portfolio" element={<Portfolio />} />
+            <Route path="/contact" element={<Contact />} />
+            <Route path="/resume" element={<Resume />} />
+          </Routes>
+        </main>
+        <Footer />
+      </div>
     </Router>
   );
 };
+
+
+
 
 export default App;

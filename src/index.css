@@ -2,14 +2,61 @@ body {
   margin: 0;
   padding: 0;
   font-family: sans-serif;
-  background: #f1f1f1;
+  background: url('./assets/background.gif') no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 100vh;
 }
+
 
 header, footer {
   padding: 1em;
   background-color: #333;
   color: #fff;
+  text-align: center;
 }
+
+.container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  justify-content: space-between;
+}
+
+.navigation {
+  display: flex;
+  justify-content: center;
+  gap: 1em; /* creates a gap between the links */
+  padding: 1em;
+  margin-top: 50px;
+}
+
+.navigation a {
+  color: #fff;
+  text-decoration: none;
+  padding: 0.5em 1em; /* creates a larger click area and visually appears as a button */
+  background-color: #666666a4; /* add a background color to make the link look like a button */
+  border-radius: 5px; /* rounds the corners of the button */
+}
+
+.navigation a:hover {
+  text-decoration: none;
+  background-color: #999; /* changes the button color on hover */
+}
+
+
+
+
+footer {
+  display: flex;
+  justify-content: center;
+}
+
 
 nav a {
   margin-right: 1em;

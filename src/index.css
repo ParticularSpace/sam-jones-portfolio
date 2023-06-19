@@ -1,83 +1,33 @@
-body {
+
+/* CSS reset */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
   margin: 0;
   padding: 0;
-  font-family: sans-serif;
-  background: url('./assets/background.gif') no-repeat center center fixed; 
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  min-height: 100vh;
 }
 
-
-header, footer {
-  padding: 1em;
-  background-color: #333;
-  color: #fff;
-  text-align: center;
-}
-
-.container {
+body {
+  font-family: 'Roboto', sans-serif;
+  color: #333;
+  line-height: 1.5;
+  background-color: #f7f7f7;
   display: flex;
   flex-direction: column;
   min-height: 100vh;
-  justify-content: space-between;
 }
 
-.navigation {
-  display: flex;
-  justify-content: center;
-  gap: 1em; /* creates a gap between the links */
-  padding: 1em;
-  margin-top: 50px;
-}
-
-.navigation a {
-  color: #fff;
+a {
   text-decoration: none;
-  padding: 0.5em 1em; /* creates a larger click area and visually appears as a button */
-  background-color: #666666a4; /* add a background color to make the link look like a button */
-  border-radius: 5px; /* rounds the corners of the button */
+  color: inherit;
 }
 
-.navigation a:hover {
-  text-decoration: none;
-  background-color: #999; /* changes the button color on hover */
-}
-
-
-
-
-footer {
-  display: flex;
-  justify-content: center;
+.container-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  min-height: 100vh;
+  padding: 1rem 1rem;
 }
 
 
-nav a {
-  margin-right: 1em;
-  color: #fff;
-  text-decoration: none;
-}
-
-nav a:hover {
-  text-decoration: underline;
-}
-
-footer a {
-  margin-right: 1em;
-  color: #fff;
-  text-decoration: none;
-}
-
-footer a:hover {
-  text-decoration: underline;
-}
-
-section {
-  padding: 2em;
-}

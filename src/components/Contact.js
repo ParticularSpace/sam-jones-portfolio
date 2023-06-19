@@ -1,25 +1,41 @@
 import React from 'react';
+import { TextField, Button } from '@mui/material';
 
 const Contact = () => {
-    return (
-        <section>
-            <h2>Contact</h2>
-            <form>
-                <label>
-                    <input type="text" name="name" />
-                </label>
-                <label>
-                    Email:
-                    <input type="email" name="email" />
-                </label>
-                <label>
-                    Message:
-                    <textarea name="message"></textarea>
-                </label>
-                <button type="submit">Submit</button>
-            </form>
-        </section>
-    );
+  return (
+    <form>
+      <TextField
+        required
+        id="name"
+        label="Name"
+        variant="outlined"
+        fullWidth
+        style={{ marginBottom: '20px' }}
+      />
+      <TextField
+        required
+        id="email"
+        label="Email"
+        type="email"
+        variant="outlined"
+        fullWidth
+        style={{ marginBottom: '20px' }}
+      />
+      <TextField
+        required
+        id="message"
+        label="Message"
+        multiline
+        rows={4}
+        variant="outlined"
+        fullWidth
+        style={{ marginBottom: '20px' }}
+      />
+      <Button type="submit" variant="contained">
+        Submit
+      </Button>
+    </form>
+  );
 };
 
 export default Contact;

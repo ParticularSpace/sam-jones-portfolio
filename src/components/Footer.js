@@ -1,13 +1,16 @@
-import React from 'react';
+import { AppBar, Toolbar, Typography } from '@mui/material';
 
-const Footer = () => {
-    return (
-        <footer>
-            <a href="https://github.com/samjones">GitHub</a>
-            <a href="https://linkedin.com/in/samjones">LinkedIn</a>
-            <a href="https://stackoverflow.com/users/samjones">Stack Overflow</a>
-        </footer>
-    );
-};
+function Footer() {
+  return (
+    <AppBar position="static">
+      <Toolbar>
+        <Typography variant="body1">
+          <p>Sam Jones</p>
+        </Typography>
+      </Toolbar>
+    </AppBar>
+  );
+}
+
 
 export default Footer;

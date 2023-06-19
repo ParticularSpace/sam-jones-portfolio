@@ -6,14 +6,12 @@ import About from './components/About';
 import Portfolio from './components/Portfolio';
 import Contact from './components/Contact';
 import Resume from './components/Resume';
-import Navigation from './components/Navigation';
 
 const App = () => {
   return (
     <Router>
       <div className="container">
         <Header />
-        <Navigation />
         <main style={{flexGrow: 1}}>
           <Routes>
             <Route path="/about" element={<About />} />

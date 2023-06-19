@@ -1,25 +1,28 @@
 import React from 'react';
-import Project from './Project';
+import { Card, CardContent, CardMedia, Typography, Button } from '@mui/material';
 
 const Portfolio = () => {
-    // Replace these with your actual projects
-    const projects = [
-        {
-            title: "Project 1",
-            image: "project1.jpg",
-            deployedUrl: "https://example.com/project1",
-            repoUrl: "https://github.com/ParticularSpace/A1"
-        }
-    ];
-
-    return (
-        <section>
-            <h2>Portfolio</h2>
-            {projects.map((project, index) => (
-                <Project key={index} {...project} />
-            ))}
-        </section>
-    );
+  return (
+    <Card sx={{ maxWidth: 345 }}>
+      <CardMedia
+        component="img"
+        height="140"
+        image="project_image_url"
+        alt="Project name"
+      />
+      <CardContent>
+        <Typography gutterBottom variant="h5" component="div">
+          Project Name
+        </Typography>
+      </CardContent>
+      <Button size="small" color="primary" href="deployed_app_url">
+        View Deployed App
+      </Button>
+      <Button size="small" color="primary" href="github_repo_url">
+        View on GitHub
+      </Button>
+    </Card>
+  );
 };
 
 export default Portfolio;

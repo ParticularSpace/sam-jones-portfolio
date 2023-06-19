@@ -1,40 +1,72 @@
-import React from 'react';
-import { TextField, Button } from '@mui/material';
+import React, { useState } from 'react';
+import { TextField, Button, Box, Card, CardContent, Typography } from '@mui/material';
 
 const Contact = () => {
+  const [email, setEmail] = useState("");
+  const [emailError, setEmailError] = useState(false);
+
+  const validateEmail = () => {
+    const re = /\S+@\S+\.\S+/;
+    setEmailError(!re.test(email));
+  };
+
   return (
-    <form>
-      <TextField
-        required
-        id="name"
-        label="Name"
-        variant="outlined"
-        fullWidth
-        style={{ marginBottom: '20px' }}
-      />
-      <TextField
-        required
-        id="email"
-        label="Email"
-        type="email"
-        variant="outlined"
-        fullWidth
-        style={{ marginBottom: '20px' }}
-      />
-      <TextField
-        required
-        id="message"
-        label="Message"
-        multiline
-        rows={4}
-        variant="outlined"
-        fullWidth
-        style={{ marginBottom: '20px' }}
-      />
-      <Button type="submit" variant="contained">
-        Submit
-      </Button>
-    </form>
+    <Box 
+      p={3} 
+      sx={{
+        backgroundColor: '#333',
+        color: '#fff',
+        minHeight: '100vh',
+        display: 'flex',
+        justifyContent: 'center',
+        alignItems: 'center'
+      }}
+    >
+      <Card sx={{ width: '100%', maxWidth: '500px'}}>
+        <CardContent>
+          <Typography variant="h5" component="h2" gutterBottom align="center">
+            Contact Me
+          </Typography>
+          <form>
+            <TextField
+              required
+              id="name"
+              label="Name"
+              variant="outlined"
+              fullWidth
+              style={{ marginBottom: '20px' }}
+            />
+            <TextField
+              required
+              id="email"
+              label="Email"
+              type="email"
+              variant="outlined"
+              fullWidth
+              style={{ marginBottom: '20px' }}
+              value={email}
+              onChange={(e) => setEmail(e.target.value)}
+              onBlur={validateEmail}
+              error={emailError}
+              helperText={emailError && "Invalid email address"}
+            />
+            <TextField
+              required
+              id="message"
+              label="Message"
+              multiline
+              rows={4}
+              variant="outlined"
+              fullWidth
+              style={{ marginBottom: '20px' }}
+            />
+            <Button type="submit" variant="contained" sx={{backgroundColor: '#444', color: '#fff'}}>
+              Submit
+            </Button>
+          </form>
+        </CardContent>
+      </Card>
+    </Box>
   );
 };
 

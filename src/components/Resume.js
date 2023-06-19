@@ -1,24 +1,32 @@
 import React from 'react';
-import { Typography, Button } from '@mui/material';
+import { Typography, Button, Box } from '@mui/material';
 
 const Resume = () => {
   return (
-    <div>
-      <Typography variant="h4" component="h1" gutterBottom>
+    <Box 
+      p={3} 
+      sx={{
+        backgroundColor: '#333', 
+        color: '#fff',
+        minHeight: '100vh'
+      }}
+    >
+      <Typography variant="h4" component="h1" gutterBottom sx={{color: '#fff', margin: '30px'}}>
         My Resume
       </Typography>
-      <Typography variant="body1" gutterBottom>
-        <ul>
-          <li>Proficiency 1</li>
-          <li>Proficiency 2</li>
-          <li>Proficiency 3</li>
-          {/* Add as many proficiencies as you have */}
-        </ul>
-      </Typography>
-      <Button variant="contained" href="/path-to-your-resume.pdf" target="_blank">
+      <Box
+        component="iframe"
+        src="/assets/resume.pdf"
+        width="100%"
+        height="600px"
+        sx={{
+          border: 'none', 
+        }}
+      />
+      <Button variant="contained" href="/assets/resume.pdf" target="_blank" sx={{marginTop: '20px', backgroundColor: '#555', color: '#fff', display: 'flex',}}>
         Download My Resume
       </Button>
-    </div>
+    </Box>
   );
 };
 

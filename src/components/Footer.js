@@ -1,16 +1,22 @@
-import { AppBar, Toolbar, Typography } from '@mui/material';
+import { AppBar, Toolbar, Typography, Box } from '@mui/material';
 
 function Footer() {
   return (
-    <AppBar position="static">
-      <Toolbar>
-        <Typography variant="body1">
-          <p>Sam Jones</p>
-        </Typography>
-      </Toolbar>
-    </AppBar>
+    <Box
+      sx={{
+        display: 'flex',
+        flexDirection: 'column',
+        minHeight: '100vh',
+      }}
+    >
+      <Box sx={{ flex: '1 0 auto' }} />
+      <AppBar position="sticky">
+        <Toolbar>
+          <Typography variant="body1">Sam Jones</Typography>
+        </Toolbar>
+      </AppBar>
+    </Box>
   );
 }
-
 
 export default Footer;

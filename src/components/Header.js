@@ -8,7 +8,7 @@ function Header() {
       position="static"
       sx={{
         backgroundColor: '#333',  
-        maxHeight: '30px',       
+        maxHeight: '40px',       
       }}
     >
       <Toolbar sx={{display: 'flex', justifyContent: 'space-between'}}>

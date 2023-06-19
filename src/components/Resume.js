@@ -6,12 +6,12 @@ const Resume = () => {
     <Box 
       p={3} 
       sx={{
-        backgroundColor: '#333', 
-        color: '#fff',
+        backgroundColor: '#ffff',
+        color: '#003366',
         minHeight: '100vh'
       }}
     >
-      <Typography variant="h4" component="h1" gutterBottom sx={{color: '#fff', margin: '30px'}}>
+      <Typography variant="h4" component="h1" gutterBottom sx={{color: '#003366', margin: '30px'}}> 
         My Resume
       </Typography>
       <Box
@@ -23,9 +23,12 @@ const Resume = () => {
           border: 'none', 
         }}
       />
-      <Button variant="contained" href="/assets/resume.pdf" target="_blank" sx={{marginTop: '20px', backgroundColor: '#555', color: '#fff', display: 'flex',}}>
-        Download My Resume
-      </Button>
+      <a href="/assets/resume.pdf" download>
+  <Button variant="contained" sx={{marginTop: '20px', backgroundColor: '#003366', color: '#ffffff', display: 'flex',}}>
+    Download My Resume
+  </Button>
+</a>
+
     </Box>
   );
 };

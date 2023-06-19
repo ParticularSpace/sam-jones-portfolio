@@ -1,4 +1,4 @@
-import { AppBar, Toolbar, Typography, Box, IconButton } from '@mui/material';
+import { Box, AppBar, Toolbar, Typography, IconButton } from '@mui/material';
 
 function Footer() {
   return (
@@ -10,14 +10,14 @@ function Footer() {
       }}
     >
       <Box sx={{ flex: '1 0 auto' }} />
-      <AppBar position="sticky" sx={{ bgcolor: '#333' }}>
+      <AppBar position="sticky" sx={{ bgcolor: '#fff' }}> 
         <Toolbar>
-          <Typography variant="body1" sx={{ flexGrow: 1 }}>Sam Jones</Typography>
+          <Typography variant="body1" sx={{ flexGrow: 1, color: '#333' }}>Sam Jones</Typography> 
           <IconButton 
             sx={{ 
-              color: '#fff', 
+              color: '#333',
               '&:hover': {
-                backgroundColor: 'rgba(255, 255, 255, 0.1)', 
+                backgroundColor: 'rgba(0, 0, 0, 0.1)', 
               },
             }} 
             href="https://github.com/ParticularSpace" 
@@ -27,9 +27,9 @@ function Footer() {
           </IconButton>
           <IconButton 
             sx={{ 
-              color: '#fff', 
+              color: '#333',
               '&:hover': {
-                backgroundColor: 'rgba(255, 255, 255, 0.1)', 
+                backgroundColor: 'rgba(0, 0, 0, 0.1)', 
               },
             }} 
             href="https://linkedin.com/in/yourusername" 
@@ -39,9 +39,9 @@ function Footer() {
           </IconButton>
           <IconButton 
             sx={{ 
-              color: '#fff', 
+              color: '#333', 
               '&:hover': {
-                backgroundColor: 'rgba(255, 255, 255, 0.1)', // Change this to the color you want when hovering
+                backgroundColor: 'rgba(0, 0, 0, 0.1)', 
               },
             }} 
             href="tel:1234567890"
@@ -50,9 +50,9 @@ function Footer() {
           </IconButton>
           <IconButton 
             sx={{ 
-              color: '#fff', 
+              color: '#333',
               '&:hover': {
-                backgroundColor: 'rgba(255, 255, 255, 0.1)', // Change this to the color you want when hovering
+                backgroundColor: 'rgba(0, 0, 0, 0.1)', 
               },
             }} 
             href="tel:1234567890"

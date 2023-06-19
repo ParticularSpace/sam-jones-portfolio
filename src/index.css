@@ -10,7 +10,7 @@ body {
   font-family: 'Roboto', sans-serif;
   color: #333;
   line-height: 1.5;
-  background-color: #f7f7f7;
+  background-color: #fff; 
   display: flex;
   flex-direction: column;
   min-height: 100vh;
@@ -28,4 +28,16 @@ a {
   padding: 1rem 1rem;
 }
 
+.my-masonry-grid {
+  display: flex;
+  margin-left: -30px; 
+  width: auto;
+}
+.my-masonry-grid_column {
+  padding-left: 30px; 
+  background-clip: padding-box;
+}
 
+.my-masonry-grid_column > div { 
+  margin-bottom: 30px;
+}

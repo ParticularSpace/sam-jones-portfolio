@@ -14,15 +14,15 @@ const Contact = () => {
     <Box 
       p={3} 
       sx={{
-        backgroundColor: '#333',
-        color: '#fff',
+        backgroundColor: '#ffff', 
+        color: '#003366',
         minHeight: '100vh',
         display: 'flex',
         justifyContent: 'center',
         alignItems: 'center'
       }}
     >
-      <Card sx={{ width: '100%', maxWidth: '500px'}}>
+      <Card sx={{ width: '100%', maxWidth: '500px', backgroundColor: '#f7f7f7' }}>
         <CardContent>
           <Typography variant="h5" component="h2" gutterBottom align="center">
             Contact Me
@@ -60,7 +60,7 @@ const Contact = () => {
               fullWidth
               style={{ marginBottom: '20px' }}
             />
-            <Button type="submit" variant="contained" sx={{backgroundColor: '#444', color: '#fff'}}>
+            <Button type="submit" variant="contained" sx={{backgroundColor: '#555', color: '#fff' }}>
               Submit
             </Button>
           </form>

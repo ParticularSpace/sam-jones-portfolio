@@ -7,10 +7,9 @@ function About() {
                 display: 'flex',
                 flexDirection: 'column',
                 alignItems: 'center',
-                gap: '20px',
-                padding: '20px',
                 minHeight: '100vh',
-                backgroundColor: '#333',
+                backgroundColor: '#f0f0f0', 
+                color: '#003366' 
             }}
         >
             <Box
@@ -18,12 +17,12 @@ function About() {
                     display: 'flex',
                     flexDirection: 'column',
                     alignItems: 'center',
-                    gap: '20px',
                     padding: '20px',
-                    backgroundColor: '#444',
+                    marginBottom: '20px', 
+                    backgroundColor: '#ffffff', 
                     width: '100vw',
-                    minHeight: '80vh',
-                    color: '#fff',
+                    minHeight: '20vh', 
+                    color: '#003366',
                 }}
             >
                 <Avatar
@@ -31,10 +30,21 @@ function About() {
                     src="../assets/profilePic.jpeg"
                     sx={{ width: '150px', height: '150px', marginTop: '20px' }}
                 />
-
+                <hr />
+            </Box>
+            <Box
+                sx={{
+                    display: 'flex',
+                    flexDirection: 'column',
+                    alignItems: 'center',
+                    padding: '20px',
+                    backgroundColor: '#f0f0f0',
+                    width: '100vw',
+                    minHeight: '60vh', 
+                    color: '#003366',
+                }}
+            >
                 <Typography variant="body1" align="center">
-                    <hr />
-                    <br />
                     I am a dynamic full-stack web developer with a relentless passion for learning and expanding my technical skill set. I proudly hold a certificate in Full Stack Web Development from the University of Berkeley, where I honed key skills in HTML, CSS, JavaScript, Node.js, Express.js, React.js, MySQL, and Mongoose.
                     <br />
                     <br />
@@ -47,10 +57,10 @@ function About() {
                     <Button
                         variant="contained"
                         sx={{
-                            color: '#fff',
-                            backgroundColor: '#3f51b5',
+                            color: '#ffffff',
+                            backgroundColor: '#003366',
                             '&:hover': {
-                                backgroundColor: '#757de8',
+                                backgroundColor: '#336699',
                             },
                         }}
                         href="/portfolio"

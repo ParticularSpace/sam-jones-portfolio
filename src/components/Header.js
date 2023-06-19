@@ -7,12 +7,13 @@ function Header() {
     <AppBar 
       position="static"
       sx={{
-        backgroundColor: '#333',  
+        backgroundColor: '#fff',  
         maxHeight: '40px',       
+        color: '#333' 
       }}
     >
       <Toolbar sx={{display: 'flex', justifyContent: 'space-between'}}>
-        <Typography variant="h6" component="div" sx={{color: '#fff'}}>
+        <Typography variant="h6" component="div" sx={{color: '#333'}}>
           Sam Jones
         </Typography>
         <Box>

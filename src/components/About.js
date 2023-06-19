@@ -26,10 +26,16 @@ function About() {
                 }}
             >
                 <Avatar
-                    alt="Sam Jones"
-                    src="../assets/profilePic.jpeg"
-                    sx={{ width: '150px', height: '150px', marginTop: '20px' }}
-                />
+  alt="Sam Jones"
+  src="../assets/profilePic.jpeg"
+  sx={{ 
+    width: '300px', 
+    height: '300px', 
+    borderRadius: '0', 
+    marginRight: 'auto',
+  }}
+/>
+
                 <hr />
             </Box>
             <Box

@@ -50,6 +50,33 @@ function About() {
             <Box
                 sx={{
                     display: 'flex',
+                    justifyContent: 'center',
+                    width: '100%',
+                    marginTop: '20px'
+                }}
+            >
+                <Button
+                    variant="contained"
+                    sx={{
+                        color: '#003366', // Dark blue text
+                        backgroundColor: '#fff', // White background
+                        height: '50px',
+                        width: '200px',
+                        borderRadius: '5px',
+                        border: '1px solid #003366', // Dark blue border
+                        '&:hover': {
+                            backgroundColor: '#f7f7f7', // Light grey on hover
+                            border: '0px',
+                        },
+                    }}
+                    href="/portfolio"
+                >
+                    Check out my work
+                </Button>
+            </Box>
+            <Box
+                sx={{
+                    display: 'flex',
                     flexDirection: 'row-reverse', 
                     alignItems: 'center',
                     gap: '20px',
@@ -83,28 +110,7 @@ function About() {
 </Typography>
 
             </Box>
-            <Box
-                sx={{
-                    display: 'flex',
-                    justifyContent: 'center',
-                    width: '100%',
-                    marginTop: '20px'
-                }}
-            >
-                <Button
-                    variant="contained"
-                    sx={{
-                        color: '#003366', // Dark blue text
-                        backgroundColor: '#fff', // White background
-                        '&:hover': {
-                            backgroundColor: '#f7f7f7', // Light grey on hover
-                        },
-                    }}
-                    href="/portfolio"
-                >
-                    Check out my work
-                </Button>
-            </Box>
+            
         </Box>
     );
 }

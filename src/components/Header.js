@@ -8,7 +8,7 @@ function Header() {
       position="static"
       sx={{
         backgroundColor: '#fff',  
-        maxHeight: '40px',       
+        maxHeight: '50px',       
         color: '#333' 
       }}
     >

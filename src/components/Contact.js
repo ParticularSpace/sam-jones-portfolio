@@ -14,7 +14,7 @@ const Contact = () => {
     <Box 
       p={3} 
       sx={{
-        backgroundColor: '#ffff', 
+        backgroundColor: '#ffffff', // Changed to all white
         color: '#003366',
         minHeight: '100vh',
         display: 'flex',
@@ -22,9 +22,15 @@ const Contact = () => {
         alignItems: 'center'
       }}
     >
-      <Card sx={{ width: '100%', maxWidth: '500px', backgroundColor: '#f7f7f7' }}>
+      <Card sx={{ 
+        width: '100%', 
+        maxWidth: '500px', 
+        backgroundColor: '#f7f7f7',
+        borderRadius: '15px', // More rounded edges
+        boxShadow: '0px 4px 10px rgba(0,0,0,0.1)', // Subtle shadow
+      }}>
         <CardContent>
-          <Typography variant="h5" component="h2" gutterBottom align="center">
+          <Typography variant="h5" component="div" gutterBottom sx={{ textAlign: 'left' }}>
             Contact Me
           </Typography>
           <form>
@@ -34,7 +40,8 @@ const Contact = () => {
               label="Name"
               variant="outlined"
               fullWidth
-              style={{ marginBottom: '20px' }}
+              sx={{ marginBottom: '20px', borderRadius: '5px' }} 
+              InputProps={{ style: { height: '50px' } }} 
             />
             <TextField
               required
@@ -43,7 +50,8 @@ const Contact = () => {
               type="email"
               variant="outlined"
               fullWidth
-              style={{ marginBottom: '20px' }}
+              sx={{ marginBottom: '20px', borderRadius: '5px' }} 
+              InputProps={{ style: { height: '50px' } }} 
               value={email}
               onChange={(e) => setEmail(e.target.value)}
               onBlur={validateEmail}
@@ -58,7 +66,7 @@ const Contact = () => {
               rows={4}
               variant="outlined"
               fullWidth
-              style={{ marginBottom: '20px' }}
+              sx={{ marginBottom: '20px', borderRadius: '5px' }} 
             />
             <Button type="submit" variant="contained" sx={{backgroundColor: '#555', color: '#fff' }}>
               Submit

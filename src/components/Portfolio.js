@@ -7,7 +7,7 @@ const Portfolio = () => {
   const projects = [
     {
       name: 'Weather Dashboard',
-      imageUrl: 'https://via.placeholder.com/150',
+      imageUrl: '/assets/weather.png',
       appUrl: 'https://ancient-taiga-07965-94f43cfbcb43.herokuapp.com/',
       githubUrl: 'https://github.com/ParticularSpace/react-weather',
     },
@@ -30,7 +30,7 @@ const Portfolio = () => {
       githubUrl: 'ahttps://github.com/yourusername/project-3',
     },
     {
-      name: 'coming soon',
+      name: 'Emotion-Texter',
       imageUrl: 'https://via.placeholder.com/150',
       appUrl: 'https://url-to-your-deployed-project-3.com',
       githubUrl: 'ahttps://github.com/yourusername/project-3',
@@ -91,7 +91,7 @@ const Portfolio = () => {
     <Box
       p={3}
       sx={{
-        backgroundColor: '#f0f0f0', 
+        backgroundColor: '#ffff', 
         color: '#003366', 
         minHeight: '90vh',
         display: 'flex',
@@ -135,12 +135,6 @@ const Portfolio = () => {
                   {project.name}
                 </Typography>
               </CardContent>
-              <Button size="small" color="primary" href={project.appUrl}>
-                View Deployed App
-              </Button>
-              <Button size="small" color="primary" href={project.githubUrl}>
-                View on GitHub
-              </Button>
             </Card>
           </Grid>
         ))}
@@ -176,6 +170,13 @@ const Portfolio = () => {
                 View on GitHub
               </Button>
             </Typography>
+            <p>
+            Using Open Weather API, this app allows you to search for a city and get the current weather and a 5 day forecast. < br />
+            < br />
+            Technologies used: - React, Node, Express, muicss, Open Weather API
+            
+            
+            </p>
           </Box>
         ) : (
           <div />

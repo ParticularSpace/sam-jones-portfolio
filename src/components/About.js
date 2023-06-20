@@ -7,50 +7,35 @@ function About() {
                 display: 'flex',
                 flexDirection: 'column',
                 alignItems: 'center',
+                gap: '20px',
+                padding: '20px',
                 minHeight: '100vh',
-                backgroundColor: '#f0f0f0', 
-                color: '#003366' 
+                backgroundColor: '#fff', // White background
+                color: '#003366' // Dark blue text
             }}
         >
             <Box
                 sx={{
                     display: 'flex',
-                    flexDirection: 'column',
+                    flexDirection: 'row', // Changed to row
                     alignItems: 'center',
+                    gap: '20px',
                     padding: '20px',
-                    marginBottom: '20px', 
-                    backgroundColor: '#ffffff', 
+                    backgroundColor: '#f7f7f7', 
                     width: '100vw',
-                    minHeight: '20vh', 
-                    color: '#003366',
+                    minHeight: '60vh',
+                    color: '#003366', 
                 }}
             >
                 <Avatar
-  alt="Sam Jones"
-  src="../assets/profilePic.jpeg"
-  sx={{ 
-    width: '300px', 
-    height: '300px', 
-    borderRadius: '0', 
-    marginRight: 'auto',
-  }}
-/>
+                    alt="Sam Jones"
+                    src="../assets/profilePic.jpeg"
+                    sx={{ width: '200px', height: '200px', marginTop: '20px', marginRight: '20px' }}
+                />
 
-                <hr />
-            </Box>
-            <Box
-                sx={{
-                    display: 'flex',
-                    flexDirection: 'column',
-                    alignItems: 'center',
-                    padding: '20px',
-                    backgroundColor: '#f0f0f0',
-                    width: '100vw',
-                    minHeight: '60vh', 
-                    color: '#003366',
-                }}
-            >
                 <Typography variant="body1" align="center">
+                    <hr />
+                    <br />
                     I am a dynamic full-stack web developer with a relentless passion for learning and expanding my technical skill set. I proudly hold a certificate in Full Stack Web Development from the University of Berkeley, where I honed key skills in HTML, CSS, JavaScript, Node.js, Express.js, React.js, MySQL, and Mongoose.
                     <br />
                     <br />
@@ -59,21 +44,28 @@ function About() {
                     <br />
                     I am eager to bring my technical prowess, dedication, and drive to a fast-paced, quality-driven team, where I can contribute to creating more effective, engaging, and intuitive web experiences. I believe that the union of technology, creativity, and collaboration can lead to the digital solutions of tomorrow.
                 </Typography>
-                <Box>
-                    <Button
-                        variant="contained"
-                        sx={{
-                            color: '#ffffff',
-                            backgroundColor: '#003366',
-                            '&:hover': {
-                                backgroundColor: '#336699',
-                            },
-                        }}
-                        href="/portfolio"
-                    >
-                        Check out my work
-                    </Button>
-                </Box>
+            </Box>
+            <Box
+                sx={{
+                    display: 'flex',
+                    justifyContent: 'center',
+                    width: '100%',
+                    marginTop: '20px'
+                }}
+            >
+                <Button
+                    variant="contained"
+                    sx={{
+                        color: '#003366', // Dark blue text
+                        backgroundColor: '#fff', // White background
+                        '&:hover': {
+                            backgroundColor: '#f7f7f7', // Light grey on hover
+                        },
+                    }}
+                    href="/portfolio"
+                >
+                    Check out my work
+                </Button>
             </Box>
         </Box>
     );

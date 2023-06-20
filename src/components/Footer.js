@@ -32,7 +32,7 @@ function Footer() {
                 backgroundColor: 'rgba(0, 0, 0, 0.1)', 
               },
             }} 
-            href="https://linkedin.com/in/yourusername" 
+            href="https://www.linkedin.com/in/sam-jones-02a6461b7/" 
             target="_blank"
           >
             <img src="/assets/icons/linkedin.png" alt="LinkedIn Icon" height="24" width="24" />
@@ -44,9 +44,9 @@ function Footer() {
                 backgroundColor: 'rgba(0, 0, 0, 0.1)', 
               },
             }} 
-            href="tel:1234567890"
+            href="https://discordapp.com/users/337440214345711616"
           >
-            <img src="/assets/icons/slack.png" alt="Slack Icon" height="24" width="24" />
+            <img src="/assets/icons/discord.png" alt="Slack Icon" height="24" width="24" />
           </IconButton>
           <IconButton 
             sx={{ 
@@ -55,7 +55,7 @@ function Footer() {
                 backgroundColor: 'rgba(0, 0, 0, 0.1)', 
               },
             }} 
-            href="tel:1234567890"
+            href="https://twitter.com/sam_jjones12"
           >
             <img src="/assets/icons/twitter.png" alt="Twitter Icon" height="24" width="24" />
           </IconButton>

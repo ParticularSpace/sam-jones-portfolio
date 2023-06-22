@@ -10,30 +10,35 @@ const Portfolio = () => {
       imageUrl: '/assets/weather.png',
       appUrl: 'https://ancient-taiga-07965-94f43cfbcb43.herokuapp.com/',
       githubUrl: 'https://github.com/ParticularSpace/react-weather',
+      description: 'Used Open Weather API, React, and muicss'
     },
     {
       name: 'Tech Blog',
       imageUrl: '/assets/techBlog.png',
       appUrl: 'https://mate-blog.herokuapp.com/',
       githubUrl: 'https://github.com/ParticularSpace/tech_blog',
+      description: 'Used Node, Express, Sequelize, Handlebars, and bcrypt'
     },
     {
       name: 'Four-leaf Blackjack V1',
       imageUrl: '/assets/blackjack.png',
       // appUrl: 'https://url-to-your-deployed-project-3.com',
       githubUrl: 'https://github.com/ParticularSpace/WP-Cas',
+      description: 'Used Node, Express, Sequelize, Open AI API, Handlebars, and bcrypt'
     },
     {
       name: 'Snake Game',
       imageUrl: '/assets/snake_game.png',
       appUrl: 'https://particularspace.github.io/snakeGame/',
       githubUrl: 'https://github.com/ParticularSpace/snakeGame',
+      description: 'Used HTML, CSS, and JavaScript'
     },
     {
-      name: 'Emotion Texter',
+      name: 'Coming soon',
       imageUrl: 'https://via.placeholder.com/150',
       appUrl: 'https://url-to-your-deployed-project-3.com',
       githubUrl: 'ahttps://github.com/yourusername/project-3',
+      description: 'Using React'
     },
     {
       name: 'Ecom Back End',
@@ -46,18 +51,21 @@ const Portfolio = () => {
       imageUrl: 'https://via.placeholder.com/150',
       appUrl: 'https://url-to-your-deployed-project-3.com',
       githubUrl: 'ahttps://github.com/yourusername/project-3',
+      description: 'Using Node, Express, Sequelize, and MySQL'
     },
     {
       name: 'Weather Dashboard V1.0',
       imageUrl: '/assets/weather-Dashboard.png',
       appUrl: 'https://particularspace.github.io/A6-Weather-Dashboard/',
       githubUrl: 'https://github.com/ParticularSpace/A6-Weather-Dashboard',
+      description: 'Used Open Weather API, HTML, CSS, and JavaScript'
     },
     {
       name: 'Random Password Generator',
-      imageUrl: 'https://via.placeholder.com/150',
+      imageUrl: '/assets/passwordGen.png',
       appUrl: 'https://url-to-your-deployed-project-3.com',
       githubUrl: 'ahttps://github.com/yourusername/project-3',
+      description: 'Using HTML, CSS, and JavaScript'
     },
 
   ];
@@ -138,7 +146,7 @@ const Portfolio = () => {
                   {project.name}
                 </Typography>
                 <Typography variant="body2" color="text.secondary">
-                  Brief description of the project goes here.
+                  {project.description}
                 </Typography>
               </CardContent>
             </Card>

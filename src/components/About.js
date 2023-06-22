@@ -1,5 +1,6 @@
 import { Typography, Avatar, Button, Box, Card, CardActionArea, CardContent, CardMedia, Grid } from '@mui/material';
 
+
 function About() {
     return (
         <Box
@@ -15,7 +16,7 @@ function About() {
             }}
         >
             {/* Top section */}
-            <Grid container spacing={2} sx={{ minHeight: '25vh', backgroundColor: '#f7f7f7', padding: '20px' }}>
+            <Grid container spacing={2} sx={{ minHeight: '25vh', backgroundColor: '#f7f7f7', padding: '20px', margin: '10px' }}>
                 <Grid item xs={12} sm={6}>
                     <Avatar
                         alt="Sam Jones"
@@ -53,7 +54,7 @@ function About() {
             </Grid>
 
            {/* Featured project section */}
-<Grid container spacing={2} sx={{ minHeight: '25vh', backgroundColor: '#f7f7f7', padding: '20px' }}>
+           <Grid container spacing={2} sx={{ minHeight: '25vh', backgroundColor: '#003366', padding: '20px' }}>
     <Grid item xs={12} sm={6}>
         <Card sx={{ 
             maxWidth: 445, 
@@ -62,27 +63,30 @@ function About() {
                 transition: 'transform 0.3s',
             }
         }}>
-            <CardMedia
-                component="img"
-                height="300"
-                width="400px"
-                image="/assets/weather.png"
-                alt="Weather Dashboard"
-            />
+            <CardActionArea href="https://ancient-taiga-07965-94f43cfbcb43.herokuapp.com/">
+                <CardMedia
+                    component="img"
+                    height="300"
+                    width="400"
+                    image="/assets/weather.png"
+                    alt="Weather Dashboard"
+                />
+            </CardActionArea>
         </Card>
     </Grid>
     <Grid item xs={12} sm={6}>
-        <Typography gutterBottom variant="h5" component="div">
+        <Typography gutterBottom variant="h5" component="div" color="white">
             Featured Project: Weather Dashboard
+            <hr />
         </Typography>
-        <Typography variant="body2" color="text.secondary">
+        <Typography variant="body2" color="#fff">
             This is a weather dashboard application that allows users to search for weather forecasts by city name. The application provides current weather information as well as a 5-day forecast. The data includes temperature, humidity, wind speed, and UV index. The application also keeps a history of searched cities for easy access.
         </Typography>
         <Button 
             size="small" 
             color="primary" 
             href="https://github.com/ParticularSpace/react-weather"
-            sx={{ marginTop: '10px' }}
+            sx={{ marginTop: '10px', backgroundColor: '#fff', margin: '10px' }}
         >
             View on GitHub
         </Button>
@@ -90,7 +94,7 @@ function About() {
             size="small" 
             color="primary" 
             href="https://ancient-taiga-07965-94f43cfbcb43.herokuapp.com/"
-            sx={{ marginTop: '10px' }}
+            sx={{ marginTop: '10px', backgroundColor: '#fff', margin: '10px' }}
         >
             View Live Application
         </Button>
@@ -115,13 +119,13 @@ function About() {
             </Grid>
 
             {/* Final section */}
-            <Grid container spacing={2} sx={{ minHeight: '25vh', backgroundColor: '#f7f7f7', padding: '20px' }}>
+            <Grid container spacing={2} sx={{ minHeight: '25vh', backgroundColor: '#003366', padding: '20px' }}>
                 <Grid item xs={12}>
-                    <Typography variant="h4" component="div">
+                    <Typography variant="h4" component="div" color="#fff">
                         Contact Me
                     </Typography>
                     <hr />
-                    <Typography variant="body1" align="left">
+                    <Typography variant="body1" align="left" color="#fff">
                         I'm always open to new opportunities and challenges. If you're interested in collaborating or just want to say hi, feel free to get in touch.
                     </Typography>
                     <Button

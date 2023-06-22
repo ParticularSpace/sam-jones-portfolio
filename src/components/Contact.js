@@ -6,12 +6,23 @@ import WebIcon from '@mui/icons-material/Web';
 import { styled, keyframes } from '@mui/system';
 
 const Contact = () => {
+  const [name, setName] = useState("");
   const [email, setEmail] = useState("");
+  const [message, setMessage] = useState("");
   const [emailError, setEmailError] = useState(false);
 
   const validateEmail = () => {
     const re = /\S+@\S+\.\S+/;
     setEmailError(!re.test(email));
+  };
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    if (!emailError) {
+      // Here you can handle the form submission.
+      // You have access to the current values of the fields through the state variables.
+      console.log(name, email, message);
+    }
   };
 
   const fadeIn = keyframes`
@@ -63,46 +74,51 @@ const Contact = () => {
         </Typography>
 
         <CardContent>
-          <form>
-            <TextField
-              required
-              id="name"
-              label="Name"
-              variant="outlined"
-              fullWidth
-              sx={{ marginBottom: '20px', borderRadius: '5px' }}
-              InputProps={{ style: { height: '50px' } }}
-            />
-            <TextField
-              required
-              id="email"
-              label="Email"
-              type="email"
-              variant="outlined"
-              fullWidth
-              sx={{ marginBottom: '20px', borderRadius: '5px' }}
-              InputProps={{ style: { height: '50px' } }}
-              value={email}
-              onChange={(e) => setEmail(e.target.value)}
-              onBlur={validateEmail}
-              error={emailError}
-              helperText={emailError && "Invalid email address"}
-            />
-            <TextField
-              required
-              id="message"
-              label="Message"
-              multiline
-              rows={4}
-              variant="outlined"
-              fullWidth
-              sx={{ marginBottom: '20px', borderRadius: '5px' }}
-            />
-            <Button type="submit" variant="contained" sx={{ backgroundColor: '#555', color: '#fff' }}>
-              Submit
-            </Button>
-          </form>
-        </CardContent>
+      <form onSubmit={handleSubmit}>
+        <TextField
+          required
+          id="name"
+          label="Name"
+          variant="outlined"
+          fullWidth
+          sx={{ marginBottom: '20px', borderRadius: '5px' }}
+          InputProps={{ style: { height: '50px' } }}
+          value={name}
+          onChange={(e) => setName(e.target.value)}
+        />
+        <TextField
+          required
+          id="email"
+          label="Email"
+          type="email"
+          variant="outlined"
+          fullWidth
+          sx={{ marginBottom: '20px', borderRadius: '5px' }}
+          InputProps={{ style: { height: '50px' } }}
+          value={email}
+          onChange={(e) => setEmail(e.target.value)}
+          onBlur={validateEmail}
+          error={emailError}
+          helperText={emailError && "Invalid email address"}
+        />
+        <TextField
+          required
+          id="message"
+          label="Message"
+          multiline
+          rows={4}
+          variant="outlined"
+          fullWidth
+          sx={{ marginBottom: '20px', borderRadius: '5px' }}
+          value={message}
+          onChange={(e) => setMessage(e.target.value)}
+        />
+        <Button type="submit" variant="contained" sx={{ backgroundColor: '#555', color: '#fff' }}>
+          Submit
+        </Button>
+      </form>
+    </CardContent>
+
 
         <Grid container spacing={3} sx={{ marginTop: '20px' }}>
         <Grid item xs={4}>

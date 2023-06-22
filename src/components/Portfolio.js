@@ -100,6 +100,9 @@ const Portfolio = () => {
         justifyContent: 'space-between'
       }}
     >
+      <Typography variant="h4" component="div" sx={{ marginBottom: '20px' }}>
+        My Projects
+      </Typography>
       <Button onClick={handleScrollUp}><ArrowUpwardIcon /></Button>
       <Grid container spacing={3} justifyContent="center" alignItems="center" sx={{
         maxHeight: '60vh',
@@ -133,6 +136,9 @@ const Portfolio = () => {
               <CardContent>
                 <Typography gutterBottom variant="h5" component="div">
                   {project.name}
+                </Typography>
+                <Typography variant="body2" color="text.secondary">
+                  Brief description of the project goes here.
                 </Typography>
               </CardContent>
             </Card>
@@ -170,13 +176,12 @@ const Portfolio = () => {
                 View on GitHub
               </Button>
             </Typography>
-            <p>
-            Using Open Weather API, this app allows you to search for a city and get the current weather and a 5 day forecast. < br />
-            < br />
-            Technologies used: - React, Node, Express, muicss, Open Weather API
-            
-            
-            </p>
+            <Typography variant="body2" color="text.secondary">
+              Using Open Weather API, this app allows you to search for a city and get the current weather and a 5-day forecast.
+              <br />
+              <br />
+              Technologies used: React, Node, Express, muicss, Open Weather API
+            </Typography>
           </Box>
         ) : (
           <div />
@@ -187,3 +192,4 @@ const Portfolio = () => {
 };
 
 export default Portfolio;
+

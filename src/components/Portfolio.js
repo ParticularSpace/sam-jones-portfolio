@@ -49,9 +49,9 @@ const Portfolio = () => {
     },
     {
       name: 'Weather Dashboard V1.0',
-      imageUrl: 'https://via.placeholder.com/150',
-      appUrl: 'https://url-to-your-deployed-project-3.com',
-      githubUrl: 'ahttps://github.com/yourusername/project-3',
+      imageUrl: '/assets/weather-Dashboard.png',
+      appUrl: 'https://particularspace.github.io/A6-Weather-Dashboard/',
+      githubUrl: 'https://github.com/ParticularSpace/A6-Weather-Dashboard',
     },
     {
       name: 'Random Password Generator',

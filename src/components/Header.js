@@ -7,7 +7,7 @@ function Header() {
     <AppBar 
       position="static"
       sx={{
-        backgroundColor: '#fff',  
+        backgroundColor: '#efddc4',  
         maxHeight: '50px',       
         color: '#333' 
       }}

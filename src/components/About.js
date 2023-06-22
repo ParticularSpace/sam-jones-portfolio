@@ -11,12 +11,12 @@ function About() {
                 gap: '20px',
                 padding: '20px',
                 minHeight: '100vh',
-                backgroundColor: '#fff', 
+                backgroundColor: '#efddc4', 
                 color: '#003366' 
             }}
         >
             {/* Top section */}
-            <Grid container spacing={2} sx={{ minHeight: '25vh', backgroundColor: '#f7f7f7', padding: '20px', margin: '10px' }}>
+            <Grid container spacing={2} sx={{ minHeight: '25vh', backgroundColor: '#f7f7f7', padding: '20px' }}>
                 <Grid item xs={12} sm={6}>
                     <Avatar
                         alt="Sam Jones"

@@ -2,7 +2,7 @@
   "name": "sam-jones-portfolio",
   "version": "0.1.0",
   "private": true,
-  "homepage": "http://ParticularSpace.github.io/about",
+  "homepage": "http://ParticularSpace.github.io/sam-jones-portfolio/about",
   "dependencies": {
     "@emotion/react": "^11.11.1",
     "@emotion/styled": "^11.11.0",

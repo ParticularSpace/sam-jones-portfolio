@@ -24,7 +24,7 @@ function Footer() {
             href="https://github.com/ParticularSpace" 
             target="_blank"
           >
-            <img src="/public/assets/icons/github.png" alt="Github Icon" height="24" width="24" />
+            <img src="/assets/icons/github.png" alt="Github Icon" height="24" width="24" />
           </IconButton>
           <IconButton 
             sx={{ 
@@ -47,7 +47,7 @@ function Footer() {
             }} 
             href="https://discordapp.com/users/337440214345711616"
           >
-            <img src="/public/assets/icons/discord.png" alt="Slack Icon" height="24" width="24" />
+            <img src="/assets/icons/discord.png" alt="Slack Icon" height="24" width="24" />
           </IconButton>
           <IconButton 
             sx={{ 
@@ -58,7 +58,7 @@ function Footer() {
             }} 
             href="https://twitter.com/sam_jjones12"
           >
-            <img src="/public/assets/icons/twitter.png" alt="Twitter Icon" height="24" width="24" />
+            <img src={process.env.PUBLIC_URL + '/twitter.png'} alt="Twitter Icon" height="24" width="24" />
           </IconButton>
         </Toolbar>
       </AppBar>

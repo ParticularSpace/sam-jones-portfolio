@@ -3,6 +3,7 @@ import { AppBar, Toolbar, Typography, Button, Box } from '@mui/material';
 import { Link } from 'react-router-dom';
 
 function Header() {
+  console.log('Header rendered');
   return (
     <AppBar 
       position="static"

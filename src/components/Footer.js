@@ -1,6 +1,7 @@
 import { Box, AppBar, Toolbar, Typography, IconButton } from '@mui/material';
 
 function Footer() {
+  console.log('Footer rendered');
   return (
     <Box
       sx={{

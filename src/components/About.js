@@ -2,6 +2,7 @@ import { Typography, Avatar, Button, Box, Card, CardActionArea, CardContent, Car
 
 
 function About() {
+    console.log('About rendered');
     return (
         <Box
             sx={{

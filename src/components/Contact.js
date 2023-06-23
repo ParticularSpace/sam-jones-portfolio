@@ -4,6 +4,20 @@ import ComputerIcon from '@mui/icons-material/Computer';
 import CodeIcon from '@mui/icons-material/Code';
 import WebIcon from '@mui/icons-material/Web';
 import { styled, keyframes } from '@mui/system';
+import emailjs from 'emailjs-com';
+
+const fadeIn = keyframes`
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+`;
+
+const FadeInBox = styled(Box)`
+  animation: ${fadeIn} 1s;
+`;
 
 const Contact = () => {
   const [name, setName] = useState("");
@@ -18,25 +32,18 @@ const Contact = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    if (!emailError) {
-      // Here you can handle the form submission.
-      // You have access to the current values of the fields through the state variables.
-      console.log(name, email, message);
-    }
+  
+    emailjs.send('service_hoz6wq4', 'template_xswm30v', {
+      name: name,
+      email: email,
+      message: message
+    }, 'Fq9zKhaPbDnZwTovd')
+    .then((result) => {
+        console.log(result.text);
+    }, (error) => {
+        console.log(error.text);
+    });
   };
-
-  const fadeIn = keyframes`
-    0% {
-      opacity: 0;
-    }
-    100% {
-      opacity: 1;
-    }
-  `;
-
-  const FadeInBox = styled(Box)`
-    animation: ${fadeIn} 1s;
-  `;
 
   return (
     <FadeInBox

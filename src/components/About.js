@@ -12,12 +12,12 @@ function About() {
                 gap: '20px',
                 padding: '20px',
                 minHeight: '100vh',
-                backgroundColor: '#efddc4', 
+                backgroundColor: '#85DCB', 
                 color: '#003366' 
             }}
         >
             {/* Top section */}
-            <Grid container spacing={2} sx={{ minHeight: '25vh', backgroundColor: '#f7f7f7', padding: '20px' }}>
+            <Grid container spacing={2} sx={{ minHeight: '25vh', backgroundColor: '#85DCB', padding: '20px' }}>
                 <Grid item xs={12} sm={6}>
                     <Avatar
                         alt="Sam Jones"
@@ -43,7 +43,7 @@ function About() {
                             borderRadius: '5px',
                             border: '1px solid #003366', 
                             '&:hover': {
-                                backgroundColor: '#f7f7f7', 
+                                backgroundColor: '#85DCB', 
                                 border: '0px',
                             },
                         }}
@@ -55,7 +55,7 @@ function About() {
             </Grid>
 
            {/* Featured project section */}
-           <Grid container spacing={2} sx={{ minHeight: '25vh', backgroundColor: '#003366', padding: '20px' }}>
+           <Grid container spacing={2} sx={{ minHeight: '25vh', backgroundColor: '#A0AECD', padding: '20px', borderRadius: '10px' }}>
     <Grid item xs={12} sm={6}>
         <Card sx={{ 
             maxWidth: 445, 
@@ -87,7 +87,7 @@ function About() {
             size="small" 
             color="primary" 
             href="https://github.com/ParticularSpace/react-weather"
-            sx={{ marginTop: '10px', backgroundColor: '#fff', margin: '10px' }}
+            sx={{ marginTop: '10px', backgroundColor: '#fff', margin: '10px', color: '#003366' }}
         >
             View on GitHub
         </Button>
@@ -95,7 +95,7 @@ function About() {
             size="small" 
             color="primary" 
             href="https://ancient-taiga-07965-94f43cfbcb43.herokuapp.com/"
-            sx={{ marginTop: '10px', backgroundColor: '#fff', margin: '10px' }}
+            sx={{ marginTop: '10px', backgroundColor: '#fff', margin: '10px', color: '#003366' }}
         >
             View Live Application
         </Button>
@@ -104,7 +104,7 @@ function About() {
 
 
             {/* In-depth about me section */}
-            <Grid container spacing={2} sx={{ minHeight: '25vh', backgroundColor: '#f7f7f7', padding: '20px' }}>
+            <Grid container spacing={2} sx={{ minHeight: '25vh', backgroundColor: '#fff', padding: '20px' }}>
                 <Grid item xs={12}>
                     <Typography variant="h4" component="div">
                         More About Me
@@ -120,7 +120,7 @@ function About() {
             </Grid>
 
             {/* Final section */}
-            <Grid container spacing={2} sx={{ minHeight: '25vh', backgroundColor: '#003366', padding: '20px' }}>
+            <Grid container spacing={2} sx={{ minHeight: '25vh', backgroundColor: '#A0AECD', padding: '20px', borderRadius: '10px' }}>
                 <Grid item xs={12}>
                     <Typography variant="h4" component="div" color="#fff">
                         Contact Me

@@ -11,7 +11,7 @@ function Footer() {
       }}
     >
       <Box sx={{ flex: '1 0 auto' }} />
-      <AppBar position="sticky" sx={{ bgcolor: '#efddc4' }}> 
+      <AppBar position="sticky" sx={{ bgcolor: '#EAE7DC' }}> 
         <Toolbar>
           <Typography variant="body1" sx={{ flexGrow: 1, color: '#333' }}>Sam Jones</Typography> 
           <IconButton 

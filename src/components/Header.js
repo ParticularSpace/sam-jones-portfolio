@@ -25,10 +25,10 @@ function Header() {
           Sam Jones
         </Typography>
         <Box sx={{ display: { xs: 'none', md: 'block' } }}>
-          <Button color="inherit" component={Link} to="/about">About Me</Button>
-          <Button color="inherit" component={Link} to="/portfolio">Portfolio</Button>
-          <Button color="inherit" component={Link} to="/contact">Contact</Button>
-          <Button color="inherit" component={Link} to="/resume">Resume</Button>
+          <Button color="inherit" component={Link} to="/sam-jones-portfolio/about">About Me</Button>
+          <Button color="inherit" component={Link} to="/sam-jones-portfolio/portfolio">Portfolio</Button>
+          <Button color="inherit" component={Link} to="/sam-jones-portfolio/contact">Contact</Button>
+          <Button color="inherit" component={Link} to="/sam-jones-portfolio/resume">Resume</Button>
         </Box>
         <IconButton
           color="inherit"

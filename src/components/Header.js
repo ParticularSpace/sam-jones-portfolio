@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { AppBar, Toolbar, Typography, Button, Box, IconButton, Drawer, List, ListItem } from '@mui/material';
+import { AppBar, Toolbar, Typography, Box, IconButton, Drawer, List, ListItem, ButtonBase, Button } from '@mui/material';
 import { Link } from 'react-router-dom';
 import MenuIcon from '@mui/icons-material/Menu';
 
@@ -46,10 +46,18 @@ function Header() {
         onClose={handleDrawerToggle}
       >
         <List>
-          <ListItem button component={Link} to="/about" onClick={handleDrawerToggle}>About Me</ListItem>
-          <ListItem button component={Link} to="/portfolio" onClick={handleDrawerToggle}>Portfolio</ListItem>
-          <ListItem button component={Link} to="/contact" onClick={handleDrawerToggle}>Contact</ListItem>
-          <ListItem button component={Link} to="/resume" onClick={handleDrawerToggle}>Resume</ListItem>
+          <ListItem>
+            <ButtonBase component={Link} to="/about" onClick={handleDrawerToggle}>About Me</ButtonBase>
+          </ListItem>
+          <ListItem>
+            <ButtonBase component={Link} to="/portfolio" onClick={handleDrawerToggle}>Portfolio</ButtonBase>
+          </ListItem>
+          <ListItem>
+            <ButtonBase component={Link} to="/contact" onClick={handleDrawerToggle}>Contact</ButtonBase>
+          </ListItem>
+          <ListItem>
+            <ButtonBase component={Link} to="/resume" onClick={handleDrawerToggle}>Resume</ButtonBase>
+          </ListItem>
         </List>
       </Drawer>
     </AppBar>

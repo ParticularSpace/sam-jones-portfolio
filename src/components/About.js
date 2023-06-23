@@ -1,4 +1,4 @@
-import { Typography, Avatar, Button, Box, Card, CardActionArea, CardContent, CardMedia, Grid } from '@mui/material';
+import { Typography, Avatar, Button, Box, Card, CardActionArea, CardMedia, Grid } from '@mui/material';
 
 
 function About() {
@@ -69,7 +69,7 @@ function About() {
                     component="img"
                     height="300"
                     width="400"
-                    image="/assets/weather.png"
+                    image="/public/assets/weather.png"
                     alt="Weather Dashboard"
                 />
             </CardActionArea>

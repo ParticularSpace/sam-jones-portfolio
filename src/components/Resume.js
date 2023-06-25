@@ -16,7 +16,7 @@ const Resume = () => {
       </Typography>
       <Box
         component="iframe"
-        src="/assets/resume.pdf"
+        src={`${process.env.PUBLIC_URL}/assets/resume.pdf`}
         width="100%"
         height="600px"
         sx={{

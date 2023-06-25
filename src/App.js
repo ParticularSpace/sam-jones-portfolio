@@ -15,11 +15,11 @@ const App = () => {
         <Header />
         <main style={{flexGrow: 1}}>
           <Routes>
-            <Route path="/sam-jones-portfolio" element={<About />} />
-            <Route path="/sam-jones-portfolio/about" element={<About />} />
-            <Route path="/sam-jones-portfolio/portfolio" element={<Portfolio />} />
-            <Route path="/sam-jones-portfolio/contact" element={<Contact />} />
-            <Route path="/sam-jones-portfolio/resume" element={<Resume />} />
+            <Route path="sam-jones-portfolio/" element={<About />} />
+            <Route path="sam-jones-portfolio/about" element={<About />} />
+            <Route path="sam-jones-portfolio/portfolio" element={<Portfolio />} />
+            <Route path="sam-jones-portfolio/contact" element={<Contact />} />
+            <Route path="sam-jones-portfolio/resume" element={<Resume />} />
           </Routes>
         </main>
         <Footer />

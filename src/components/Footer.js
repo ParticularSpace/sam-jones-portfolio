@@ -24,7 +24,7 @@ function Footer() {
             href="https://github.com/ParticularSpace" 
             target="_blank"
           >
-            <img src="/assets/icons/github.png" alt="Github Icon" height="24" width="24" />
+            <img src="sam-jones-portfolio/assets/icons/github.png" alt="Github Icon" height="24" width="24" />
           </IconButton>
           <IconButton 
             sx={{ 
@@ -36,7 +36,7 @@ function Footer() {
             href="https://www.linkedin.com/in/sam-jones-02a6461b7/" 
             target="_blank"
           >
-            <img src="/assets/icons/linkedin.png" alt="LinkedIn Icon" height="24" width="24" />
+            <img src="sam-jones-portfolio/assets/icons/linkedin.png" alt="LinkedIn Icon" height="24" width="24" />
           </IconButton>
           <IconButton 
             sx={{ 
@@ -47,7 +47,7 @@ function Footer() {
             }} 
             href="https://discordapp.com/users/337440214345711616"
           >
-            <img src="/assets/icons/discord.png" alt="Slack Icon" height="24" width="24" />
+            <img src="sam-jones-portfolio/assets/icons/discord.png" alt="Slack Icon" height="24" width="24" />
           </IconButton>
           <IconButton 
             sx={{ 
@@ -58,7 +58,7 @@ function Footer() {
             }} 
             href="https://twitter.com/sam_jjones12"
           >
-            <img src={process.env.PUBLIC_URL + '/twitter.png'} alt="Twitter Icon" height="24" width="24" />
+            <img src="sam-jones-portfolio/assets/icons/twitter.png" alt="Twitter Icon" height="24" width="24" />
           </IconButton>
         </Toolbar>
       </AppBar>

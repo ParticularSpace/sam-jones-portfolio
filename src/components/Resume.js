@@ -23,7 +23,7 @@ const Resume = () => {
           border: 'none', 
         }}
       />
-      <a href="/assets/resume.pdf" download>
+      <a href="./assets/resume.pdf" download>
   <Button variant="contained" sx={{marginTop: '20px', backgroundColor: '#003366', color: '#ffffff', display: 'flex',}}>
     Download My Resume
   </Button>

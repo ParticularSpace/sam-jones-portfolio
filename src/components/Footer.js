@@ -24,7 +24,7 @@ function Footer() {
             href="https://github.com/ParticularSpace" 
             target="_blank"
           >
-            <img src={`${process.env.PUBLIC_URL}/assets/icons/github.png`} alt="Github Icon" height="24" width="24" />
+            <img src='./assets/icons/github.png' alt="Github Icon" height="24" width="24" />
           </IconButton>
           <IconButton 
             sx={{ 

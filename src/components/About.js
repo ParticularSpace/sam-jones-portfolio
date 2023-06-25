@@ -69,7 +69,7 @@ function About() {
                     component="img"
                     height="300"
                     width="400"
-                    image="sam-jones-portfolio/assets/weather.png"
+                    image={`${process.env.PUBLIC_URL}/assets/weather.png`}
                     alt="Weather Dashboard"
                 />
             </CardActionArea>

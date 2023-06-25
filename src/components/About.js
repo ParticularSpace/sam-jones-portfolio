@@ -143,7 +143,7 @@ function About() {
                                 border: '0px',
                             },
                         }}
-                        href="/contact"
+                        href="sam-jones-portfolio/contact"
                     >
                         Contact Me
                     </Button>

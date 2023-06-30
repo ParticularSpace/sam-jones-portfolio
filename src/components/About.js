@@ -47,7 +47,7 @@ function About() {
                                 border: '0px',
                             },
                         }}
-                        href="/portfolio"
+                        href="/sam-jones-portfolio/portfolio"
                     >
                         Check out my work
                     </Button>
@@ -143,7 +143,7 @@ function About() {
                                 border: '0px',
                             },
                         }}
-                        href="sam-jones-portfolio/contact"
+                        href="/sam-jones-portfolio/contact"
                     >
                         Contact Me
                     </Button>

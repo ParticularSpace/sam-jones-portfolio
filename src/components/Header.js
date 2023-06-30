@@ -49,16 +49,16 @@ function Header() {
       >
         <List>
           <ListItem>
-            <ButtonBase component={Link} to="/about" onClick={handleDrawerToggle}>About Me</ButtonBase>
+            <ButtonBase component={Link} to="sam-jones-portfolio/about" onClick={handleDrawerToggle}>About Me</ButtonBase>
           </ListItem>
           <ListItem>
-            <ButtonBase component={Link} to="/portfolio" onClick={handleDrawerToggle}>Portfolio</ButtonBase>
+            <ButtonBase component={Link} to="sam-jones-portfolio/portfolio" onClick={handleDrawerToggle}>Portfolio</ButtonBase>
           </ListItem>
           <ListItem>
-            <ButtonBase component={Link} to="/contact" onClick={handleDrawerToggle}>Contact</ButtonBase>
+            <ButtonBase component={Link} to="sam-jones-portfolio/contact" onClick={handleDrawerToggle}>Contact</ButtonBase>
           </ListItem>
           <ListItem>
-            <ButtonBase component={Link} to="/resume" onClick={handleDrawerToggle}>Resume</ButtonBase>
+            <ButtonBase component={Link} to="sam-jones-portfolio/resume" onClick={handleDrawerToggle}>Resume</ButtonBase>
           </ListItem>
         </List>
       </Drawer>

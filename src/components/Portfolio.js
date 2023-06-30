@@ -34,26 +34,6 @@ const Portfolio = () => {
       description: 'Used HTML, CSS, and JavaScript'
     },
     {
-      name: 'Coming soon',
-      imageUrl: 'https://via.placeholder.com/150',
-      appUrl: 'https://url-to-your-deployed-project-3.com',
-      githubUrl: 'ahttps://github.com/yourusername/project-3',
-      description: 'Using React'
-    },
-    {
-      name: 'Ecom Back End',
-      imageUrl: 'https://via.placeholder.com/150',
-      appUrl: 'https://url-to-your-deployed-project-3.com',
-      githubUrl: 'ahttps://github.com/yourusername/project-3',
-    },
-    {
-      name: 'Employee Tracker',
-      imageUrl: 'https://via.placeholder.com/150',
-      appUrl: 'https://url-to-your-deployed-project-3.com',
-      githubUrl: 'ahttps://github.com/yourusername/project-3',
-      description: 'Using Node, Express, Sequelize, and MySQL'
-    },
-    {
       name: 'Weather Dashboard V1.0',
       imageUrl: `${process.env.PUBLIC_URL}/assets/weather-Dashboard.png`,
       appUrl: 'https://particularspace.github.io/A6-Weather-Dashboard/',
@@ -63,9 +43,30 @@ const Portfolio = () => {
     {
       name: 'Random Password Generator',
       imageUrl: `${process.env.PUBLIC_URL}/assets/passwordGen.png`,
-      appUrl: 'https://url-to-your-deployed-project-3.com',
-      githubUrl: 'ahttps://github.com/yourusername/project-3',
+      // appUrl: 'https://url-to-your-deployed-project-3.com',
+      // githubUrl: 'ahttps://github.com/yourusername/project-3',
       description: 'Using HTML, CSS, and JavaScript'
+    },
+    {
+      name: 'Ecom Back End',
+      imageUrl: 'https://via.placeholder.com/150',
+      // appUrl: 'https://url-to-your-deployed-project-3.com',
+      // githubUrl: 'ahttps://github.com/yourusername/project-3',
+      description: 'Using Node, Express, Sequelize, and MySQL'
+    },
+    {
+      name: 'Employee Tracker',
+      imageUrl: 'https://via.placeholder.com/150',
+      // appUrl: 'https://url-to-your-deployed-project-3.com',
+      // githubUrl: 'ahttps://github.com/yourusername/project-3',
+      description: 'Using Node, Express, Sequelize, and MySQL'
+    },
+    {
+      name: 'Coming soon',
+      imageUrl: 'https://via.placeholder.com/150',
+      // appUrl: 'https://url-to-your-deployed-project-3.com',
+      // githubUrl: 'ahttps://github.com/yourusername/project-3',
+      description: 'More coming soon'
     },
 
   ];

@@ -103,7 +103,7 @@ function About() {
 </Grid>
 
 
-            {/* In-depth about me section */}
+            {/* More about me section */}
             <Grid container spacing={2} sx={{ minHeight: '25vh', backgroundColor: '#fff', padding: '20px' }}>
                 <Grid item xs={12}>
                     <Typography variant="h4" component="div">
@@ -119,7 +119,7 @@ function About() {
                 </Grid>
             </Grid>
 
-            {/* Final section */}
+            {/* Last section */}
             <Grid container spacing={2} sx={{ minHeight: '25vh', backgroundColor: '#A0AECD', padding: '20px', borderRadius: '10px' }}>
                 <Grid item xs={12}>
                     <Typography variant="h4" component="div" color="#fff">

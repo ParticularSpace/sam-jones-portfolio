@@ -1,4 +1,5 @@
 import { Typography, Avatar, Button, Box, Card, CardActionArea, CardMedia, Grid } from '@mui/material';
+import { Link } from 'react-router-dom';
 
 
 function About() {
@@ -12,8 +13,8 @@ function About() {
                 gap: '20px',
                 padding: '20px',
                 minHeight: '100vh',
-                backgroundColor: '#85DCB', 
-                color: '#003366' 
+                backgroundColor: '#85DCB',
+                color: '#003366'
             }}
         >
             {/* Top section */}
@@ -34,73 +35,76 @@ function About() {
                         I am a dynamic full-stack web developer with a relentless passion for learning and expanding my technical skill set.
                     </Typography>
                     <Button
+                        color="inherit"
                         variant="contained"
+                        component={Link}
+                        to="/sam-jones-portfolio/portfolio"
                         sx={{
-                            color: '#003366', 
-                            backgroundColor: '#fff', 
+                            color: '#003366',
+                            backgroundColor: '#fff',
                             height: '50px',
                             width: '200px',
                             borderRadius: '5px',
-                            border: '1px solid #003366', 
+                            border: '1px solid #003366',
                             '&:hover': {
-                                backgroundColor: '#85DCB', 
+                                backgroundColor: '#85DCB',
                                 border: '0px',
                             },
                         }}
-                        href="/sam-jones-portfolio/portfolio"
                     >
                         Check out my work
                     </Button>
+
                 </Grid>
             </Grid>
 
-           {/* Featured project section */}
-           <Grid container spacing={2} sx={{ minHeight: '25vh', backgroundColor: '#A0AECD', padding: '20px', borderRadius: '10px' }}>
-    <Grid item xs={12} sm={6}>
-        <Card sx={{ 
-            maxWidth: 445, 
-            '&:hover': {
-                transform: 'scale(1.05)',
-                transition: 'transform 0.3s',
-            }
-        }}>
-            <CardActionArea href="https://ancient-taiga-07965-94f43cfbcb43.herokuapp.com/">
-                <CardMedia
-                    component="img"
-                    height="300"
-                    width="400"
-                    image={`${process.env.PUBLIC_URL}/assets/weather.png`}
-                    alt="Weather Dashboard"
-                />
-            </CardActionArea>
-        </Card>
-    </Grid>
-    <Grid item xs={12} sm={6}>
-        <Typography gutterBottom variant="h5" component="div" color="white">
-            Featured Project: Weather Dashboard
-            <hr />
-        </Typography>
-        <Typography variant="body2" color="#fff">
-            This is a weather dashboard application that allows users to search for weather forecasts by city name. The application provides current weather information as well as a 5-day forecast. The data includes temperature, humidity, wind speed, and UV index. The application also keeps a history of searched cities for easy access.
-        </Typography>
-        <Button 
-            size="small" 
-            color="primary" 
-            href="https://github.com/ParticularSpace/react-weather"
-            sx={{ marginTop: '10px', backgroundColor: '#fff', margin: '10px', color: '#003366' }}
-        >
-            View on GitHub
-        </Button>
-        <Button 
-            size="small" 
-            color="primary" 
-            href="https://ancient-taiga-07965-94f43cfbcb43.herokuapp.com/"
-            sx={{ marginTop: '10px', backgroundColor: '#fff', margin: '10px', color: '#003366' }}
-        >
-            View Live Application
-        </Button>
-    </Grid>
-</Grid>
+            {/* Featured project section */}
+            <Grid container spacing={2} sx={{ minHeight: '25vh', backgroundColor: '#A0AECD', padding: '20px', borderRadius: '10px' }}>
+                <Grid item xs={12} sm={6}>
+                    <Card sx={{
+                        maxWidth: 445,
+                        '&:hover': {
+                            transform: 'scale(1.05)',
+                            transition: 'transform 0.3s',
+                        }
+                    }}>
+                        <CardActionArea href="https://ancient-taiga-07965-94f43cfbcb43.herokuapp.com/">
+                            <CardMedia
+                                component="img"
+                                height="300"
+                                width="400"
+                                image={`${process.env.PUBLIC_URL}/assets/weather.png`}
+                                alt="Weather Dashboard"
+                            />
+                        </CardActionArea>
+                    </Card>
+                </Grid>
+                <Grid item xs={12} sm={6}>
+                    <Typography gutterBottom variant="h5" component="div" color="white">
+                        Featured Project: Weather Dashboard
+                        <hr />
+                    </Typography>
+                    <Typography variant="body2" color="#fff">
+                        This is a weather dashboard application that allows users to search for weather forecasts by city name. The application provides current weather information as well as a 5-day forecast. The data includes temperature, humidity, wind speed, and UV index. The application also keeps a history of searched cities for easy access.
+                    </Typography>
+                    <Button
+                        size="small"
+                        color="primary"
+                        href="https://github.com/ParticularSpace/react-weather"
+                        sx={{ marginTop: '10px', backgroundColor: '#fff', margin: '10px', color: '#003366' }}
+                    >
+                        View on GitHub
+                    </Button>
+                    <Button
+                        size="small"
+                        color="primary"
+                        href="https://ancient-taiga-07965-94f43cfbcb43.herokuapp.com/"
+                        sx={{ marginTop: '10px', backgroundColor: '#fff', margin: '10px', color: '#003366' }}
+                    >
+                        View Live Application
+                    </Button>
+                </Grid>
+            </Grid>
 
 
             {/* More about me section */}
@@ -130,23 +134,26 @@ function About() {
                         I'm always open to new opportunities and challenges. If you're interested in collaborating or just want to say hi, feel free to get in touch.
                     </Typography>
                     <Button
+                        color="inherit"
                         variant="contained"
+                        component={Link}
+                        to="/sam-jones-portfolio/contact"
                         sx={{
                             color: '#003366',
                             backgroundColor: '#fff',
                             height: '50px',
                             width: '200px',
                             borderRadius: '5px',
-                            border: '1px solid #003366', 
+                            border: '1px solid #003366',
                             '&:hover': {
-                                backgroundColor: '#f7f7f7', 
+                                backgroundColor: '#85DCB',
                                 border: '0px',
                             },
                         }}
-                        href="/sam-jones-portfolio/contact"
                     >
                         Contact Me
                     </Button>
+
                 </Grid>
             </Grid>
         </Box>

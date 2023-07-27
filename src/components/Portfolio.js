@@ -13,10 +13,10 @@ const Portfolio = () => {
       description: 'Used Open Weather API, React, and muicss'
     },
     {
-      name: 'Tech Blog',
-      imageUrl: `${process.env.PUBLIC_URL}/assets/techBlog.png`,
-      appUrl: 'https://mate-blog.herokuapp.com/',
-      githubUrl: 'https://github.com/ParticularSpace/tech_blog',
+      name: 'Social Space',
+      imageUrl: `${process.env.PUBLIC_URL}/assets/socialsspace.png`,
+      appUrl: 'https://social-space-615b764ada9e.herokuapp.com/login',
+      githubUrl: 'https://github.com/Zed-CSP/SocialNetwork',
       description: 'Used Node, Express, Sequelize, Handlebars, and bcrypt'
     },
     {
